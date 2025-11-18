@@ -2,7 +2,7 @@
 -- KBO 야구 일정 웹사이트 (dbcreate.sql)
 -- --------------------------------------------------------
 
--- 1. 데이터베이스 선택
+CREATE DATABASE IF NOT EXISTS team05_db DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE team05_db;
 
 -- --------------------------------------------------------

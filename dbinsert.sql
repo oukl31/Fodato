@@ -1,7 +1,8 @@
 -- --------------------------------------------------------
 -- KBO 야구 일정 웹사이트 데이터 삽입
 -- --------------------------------------------------------
-
+SET FOREIGN_KEY_CHECKS = 0;
+SET NAMES utf8mb4;
 USE team05_db;   
 
 -- 1. leagues 테이블 삽입
@@ -1063,7 +1064,7 @@ INSERT INTO match_players (id, match_id, team_id, player_id, position, batting_o
 
 -- 9. comments 테이블 삽입 (10개 레코드)
 INSERT INTO comments (id, match_id, content, created_at, session_id, team_id, player_id) VALUES
-(1, 83, '오늘 투수전 장난 아니다 ee', '2025-11-03 19:15:22', 'SESS_A1B2C3D4', 5, NULL),
+(1, 83, '오늘 투수전 장난 아니다 ㄷㄷ', '2025-11-03 19:15:22', 'SESS_A1B2C3D4', 5, NULL),
 (2, 22, '제발 역전 가자!!! 응원합니다!', '2025-11-03 19:28:45', 'SESS_E5F6G7H8', 2, NULL),
 (3, 45, '선수들 화이팅입니다.', '2025-11-03 14:05:10', 'SESS_I9J0K1L2', NULL, NULL),
 (4, 91, '타자 플레이가 예술이었네요!', '2025-11-03 20:32:59', 'SESS_M3N4O5P6', NULL, 25),
@@ -1073,3 +1074,5 @@ INSERT INTO comments (id, match_id, content, created_at, session_id, team_id, pl
 (8, 5, '잘 던져줬어요!', '2025-11-03 19:51:22', 'SESS_Z7A8B9C0', 4, NULL),
 (9, 77, '이 경기 직관했는데 관중수 진짜 많았어요.', '2025-11-04 22:11:03', 'SESS_D1E2F3G4', NULL, NULL),
 (10, 77, '결승타 덕분에 이겼습니다. 감사합니다!', '2025-11-04 22:15:30', 'SESS_H5I6J7K8', 1, NULL);
+
+SET FOREIGN_KEY_CHECKS = 1;
